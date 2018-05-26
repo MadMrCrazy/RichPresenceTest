@@ -8,13 +8,9 @@ RPC = Presence(client_id)
 RPC.connect()
 x = "Battlefield 1"
 y = 0
-async def ask_game():
-        x = await ainput("Insert Game")
-        if x == "":
-            x = "At the menu"
-
+username = input("username: ")
 while True:
-    RPC.update(details="Playing " +x, large_image="madmrcrazy", large_text="PSN: MadMrCrazy")
+    RPC.update(details="Playing " +x, large_image="madmrcrazy", large_text="PSN: " + username")
     print("Set Presence @ " + str(y))
     x = input("What game are you playing?")
     
