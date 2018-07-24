@@ -2,7 +2,6 @@ import random
 from pypresence import Presence
 import time
 timeis = int(time.time())
-import asyncio
 cid = "471293364109705217"
 RPC = Presence(cid)
 RPC.connect()
